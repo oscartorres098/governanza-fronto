@@ -4,8 +4,7 @@
 
 export const environment = {
   production: false,
-  serverURL: 'http://govenanza-back.rj.r.appspot.com/api/prueba-autor'
-  //serverURL: 'http://localhost:3900'
+  serverURL: 'http://localhost:3900'
 };
 
 /*
