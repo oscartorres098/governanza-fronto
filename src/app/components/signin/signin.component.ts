@@ -22,9 +22,9 @@ export class SigninComponent implements OnInit {
     this.authService.signInUser(this.user)
       .subscribe(
         res => {
-          console.log(res);
           localStorage.setItem('token', res.token);
-          this.router.navigate(['/private']);
+          localStorage.setItem('rol', res.rol);
+          this.router.navigate(['/info']);
         },
         err => console.log(err)
       )

@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  //serverURL: 'http://govenanza-back.rj.r.appspot.com/api/prueba-autor'
+  serverURL: 'http://localhost:3900'
 };
 
 /*

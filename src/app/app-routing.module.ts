@@ -1,25 +1,26 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 // Components
-import { TasksComponent } from './components/tasks/tasks.component';
-import { PrivateTasksComponent } from './components/private-tasks/private-tasks.component';
+import { AcercadeComponent } from './components/acercade/acercade.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { AuthGuard } from './auth.guard';
+import { InfoComponent } from './components/info/info.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/tasks',
+    redirectTo: '/acercade',
     pathMatch: 'full'
   },
   {
-    path: 'tasks',
-    component: TasksComponent
+    path: 'info',
+    component: InfoComponent,
+    canActivate: [AuthGuard]
   },
   {
-    path: 'private',
-    component: PrivateTasksComponent,
+    path: 'acercade',
+    component: AcercadeComponent,
     canActivate: [AuthGuard]
   },
   {

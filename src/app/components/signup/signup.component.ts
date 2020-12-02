@@ -9,7 +9,7 @@ import { Router } from '@angular/router'
 })
 export class SignupComponent implements OnInit {
 
-  public user = { email: '', password: ''}; 
+  public user = { email: '', password: '', rol: '', nombre: '', apellido: '', ultimo_ingreso: ''}; 
   constructor(
     public authService: AuthService,
     private router: Router,
@@ -22,9 +22,9 @@ export class SignupComponent implements OnInit {
     this.authService.signUpUser(this.user)
       .subscribe(
         res => {
-          console.log(res);
           localStorage.setItem('token', res.token);
-          this.router.navigate(['/private']);
+          localStorage.setItem('rol', res.rol);
+          this.router.navigate(['/info']);
         },
         err => console.log(err)
       )

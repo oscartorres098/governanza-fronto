@@ -11,7 +11,10 @@ import { TasksComponent } from './components/tasks/tasks.component';
 import { PrivateTasksComponent } from './components/private-tasks/private-tasks.component';
 import { AuthGuard } from './auth.guard';
 import { TokenInterceptorService } from './services/token-interceptor.service';
-import { ArticuloComponent } from './components/articulo/articulo.component';
+import { CompanyComponent } from './components/company/company.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { InfoComponent } from './components/info/info.component';
+import { AcercadeComponent } from './components/acercade/acercade.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +23,16 @@ import { ArticuloComponent } from './components/articulo/articulo.component';
     SigninComponent,
     TasksComponent,
     PrivateTasksComponent,
-    ArticuloComponent
+    CompanyComponent,
+    InfoComponent,
+    AcercadeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [
     AuthGuard,

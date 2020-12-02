@@ -12,6 +12,16 @@
                     <div class="form-group">
                         <input type="password" [(ngModel)]="user.password" name="password" class="form-control" placeholder="Password" required>
                     </div>
+                    
+                    <div class="form-group">
+                        <input type="text" [(ngModel)]="user.rol" name="rol" class="form-control" placeholder="Rol" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" [(ngModel)]="user.nombre" name="nombre" class="form-control" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" [(ngModel)]="user.apellido" name="apellido" class="form-control" placeholder="Apellido" required>
+                    </div>
                     <button class="btn btn-primary btn-block">
                         SignUp
                     </button>
