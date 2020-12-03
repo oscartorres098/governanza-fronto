@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  serverURL: 'http://govenanza-back.rj.r.appspot.com'
+  serverURL: 'https://backend-gobernanza.rj.r.appspot.com'
 };
