@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  serverURL: 'http://localhost:3900'
+  serverURL: 'https://backend-gobernanza.rj.r.appspot.com'
 };
 
 /*
