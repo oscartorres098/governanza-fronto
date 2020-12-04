@@ -7,8 +7,6 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { SigninComponent } from './components/signin/signin.component';
-import { TasksComponent } from './components/tasks/tasks.component';
-import { PrivateTasksComponent } from './components/private-tasks/private-tasks.component';
 import { AuthGuard } from './auth.guard';
 import { TokenInterceptorService } from './services/token-interceptor.service';
 import { CompanyComponent } from './components/company/company.component';
@@ -21,8 +19,6 @@ import { AcercadeComponent } from './components/acercade/acercade.component';
     AppComponent,
     SignupComponent,
     SigninComponent,
-    TasksComponent,
-    PrivateTasksComponent,
     CompanyComponent,
     InfoComponent,
     AcercadeComponent

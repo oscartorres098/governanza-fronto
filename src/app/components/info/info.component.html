@@ -1,4 +1,7 @@
-<p>nombre:</p>
-<p>apellido:</p>
-<p>correo:</p>
-<p>ultimo ingreso:</p>
+<div class="row">
+  <div class="col-md-4" *ngIf="user">
+              <h3>{{user.nombre}} {{user.apellido}}</h3>
+              <p>correo: {{user.email}}</p>
+              <p>ultimo ingreso: {{user.ultimo_ingresa}}</p>
+  </div>
+</div>

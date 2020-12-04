@@ -5,17 +5,13 @@ import { environment } from "../../environments/environment";
 @Injectable({
   providedIn: 'root'
 })
-export class TaskService {
+export class UserService {
 
   private URL = environment.serverURL;
   constructor(private http: HttpClient) { }
 
-  getTasks() {
-    return this.http.get<any>(this.URL + '/tasks');
-  }
-
-  getPrivateTasks() {
-    return this.http.get<any>(this.URL + '/private-tasks');
+  getInfo() {
+    return this.http.get<any>(this.URL + '/user/info');
   }
 
 }
