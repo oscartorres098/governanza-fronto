@@ -14,4 +14,8 @@ export class UserService {
     return this.http.get<any>(this.URL + '/user/info');
   }
 
+  getUsers() {
+    return this.http.get<any>(this.URL + '/user/all');
+  }
+
 }

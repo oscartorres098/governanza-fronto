@@ -1,0 +1,47 @@
+<div class="main-panel">
+  <div class="container">
+      <div class="page-inner">
+         
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="card">
+                      <div class="card-body">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="table-responsive">
+                                      <table class="table table-head-bg-primary mt-4 table-hover">
+                                          <thead>
+                                              <tr>
+                                                  <th scope="col">Nombre</th>
+                                                  <th scope="col">Apellido</th>
+                                                  <th scope="col">Email</th>
+                                                  <th scope="col">Rol</th>
+                                                  <th scope="col">Ultimo Ingreso</th>
+                                                  <th scope="col"></th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr *ngFor="let user of users">
+                                                  <td>{{ user.nombre }}</td>
+                                                  <td>{{ user.apellido }}</td>
+                                                  <td>{{ user.email }}</td>
+                                                  <td>{{ user.rol }}</td>
+                                                  <td>{{ user.ultimo_ingreso }}</td>
+                                                  <td>
+                                                     
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </div>
+                              </div>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</div>

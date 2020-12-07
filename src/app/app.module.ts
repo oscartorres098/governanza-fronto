@@ -13,6 +13,7 @@ import { CompanyComponent } from './components/company/company.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { InfoComponent } from './components/info/info.component';
 import { AcercadeComponent } from './components/acercade/acercade.component';
+import { UsersComponent } from './components/users/users.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AcercadeComponent } from './components/acercade/acercade.component';
     SigninComponent,
     CompanyComponent,
     InfoComponent,
-    AcercadeComponent
+    AcercadeComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
